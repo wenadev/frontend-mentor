@@ -1,5 +1,3 @@
-# frontend-mentor
-
 <h1>Frontend Mentor.io</h1>
 
 <div>
