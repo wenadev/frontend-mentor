@@ -5,31 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
   
   <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
+ <div class="root-container">
+   <div class="top-background">
+    <img src="images/bg-pattern-top.svg" alt="">
+   </div>
 
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+   <div class="bottom-background">
+    <img src="images/bg-pattern-bottom.svg" alt="">
   </div>
+
+  <div class="card-body">
+    <div class="profile">
+      <div class="card">
+        <div class="pattern">
+        </div>
+
+        <div class="details">
+          <div class="bio">
+            <div class="image">
+              <img src="images/image-victor.jpg" alt="">
+            </div>
+  
+            <p>Victor Crest <span> 26</span></p>
+            <span>London</span>
+          </div>
+
+          <div class="stats">
+            <div class="stats-details">
+              <p>80K</p>
+              <span>Followers</span>
+            </div>
+
+            <div class="stats-details">
+              <p>803K</p>
+              <span>Likes</span>
+            </div>
+
+            <div class="stats-details">
+              <p>1.4K</p>
+              <span>Photos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+   <div class="attribution">
+     <p>Challenge by &nbsp;<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>.<br/> 
+      Coded by &nbsp; <a href="https://www.frontendmentor.io/profile/wenadev">wenadev</a>.</p> 
+   </div>
+  </div>
+ </div>
 </body>
 </html>
