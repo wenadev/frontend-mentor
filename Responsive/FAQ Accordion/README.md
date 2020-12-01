@@ -1,5 +1,28 @@
 # Frontend Mentor - FAQ Accordion Card
 
+
+<div align="center">
+   Solution for a challenge from  <a href="https://www.frontendmentor.io/" target="_blank">FrontendMentor.io</a>.
+</div>
+
+<div align="center">
+  <h3>
+    <a href="https://faq-accordion-site.netlify.app/">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://github.com/wenadev/frontend-mentor/tree/main/Responsive/FAQ%20Accordion">
+      Solution
+    </a>
+    <span> | </span>
+    <a href="https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam">
+      Challenge
+    </a>
+  </h3>
+</div>
+
+# Overview
+
 ![Design preview for the FAQ Accordion Card coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
