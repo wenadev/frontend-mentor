@@ -7,7 +7,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://faq-accordion-site.netlify.app/">
+    <a href="https://faq-content-accordion.netlify.app">
       Demo
     </a>
     <span> | </span>
