@@ -1,4 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 html,body{margin:0; padding:0;}
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.root-container{
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    min-height: 100vh;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion{
+    flex:1 0 auto;
+    height:auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width:90%;
+    border-radius: 10px;
+    padding:100px 0;
+}@media screen and (max-width:800px){
+    .root-container{padding:80px 0 0 0;}
+ }@media screen and (max-width:800px){
+    .accordion{padding:50px 0 0px 0;}
+ }
+
+.accordion-content{
+    height: auto;
+    min-height: 80%;
+    width:70vw;
+    max-width: 1200px;
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0 7px 15px -2px #3b3b3b;
+    display: grid;
+    grid-template-columns: 0.9fr 1fr;
+    justify-content: center;
+    border-radius: 10px;
+}@media screen and (max-width:800px){
+    .accordion-content{ grid-template-columns: 1fr; width: 93%;padding-bottom: 20px;}
+}
+
+.image, .faq-content{background-color: #ffffff; border-radius: 10px;}
+@media screen and (max-width:800px){
+    .image, .faq-content{width:100%; height:auto;}
+}
+
+.bg-text{width:100%}
+
+.faq-container{max-height:; width:90%; }
+
+/*web background pattern*/
+@media screen and (min-width:801px){
+    .image::before{
+        background-image: url("../images/bg-pattern-desktop.svg");
+        content: '';
+        background-size: contain;
+        background-position:-6vw 100px;
+        background-repeat: no-repeat;
+        display: inline-block;
+       min-height:100%;
+       width: 100%;
+       min-width: 320px;
+       overflow: hidden;
+    }
+
+    .image::after{
+        background-image: url("../images/illustration-woman-online-desktop.svg");
+        content: '';
+        position: absolute;
+        left:0;
+        background-size: contain;
+        background-position:-6vw 110px;
+        background-repeat: no-repeat;
+        display: inline-block;
+       height:100%;
+       width: 100%;
+       min-width: 320px;
+       overflow: hidden;
+    }
+}
+
+/*mobile illustration styling*/
+@media screen and (max-width:800px){
+    .image{
+        border-radius: 10px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-origin: content-box;
+        min-height:13vh; 
+        height: auto;
+    }
+
+    .mobile-bg{z-index: 999; transform: translate(-12px, -107px);}
+
+    .image::before{
+        background-image: url("../images/bg-pattern-mobile.svg");
+        content: '';
+        position: absolute;
+        left:0;
+        background-position:50% 45px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        height:200px;
+       width: 100%;
+    }
+}
+
+
+@media screen and (min-width:801px){
+    .image{position: relative; height: auto;}
+
+    .box-image{
+        transition: .5s; 
+        cursor:pointer; 
+        position: absolute; 
+        left:0; 
+
+        transform: translate(-100px,178px); 
+        z-index: 10000;
+        width: 100%;
+        height:100%;
+        max-height:180px ;
+        max-width:180px;
+        object-fit: cover;
+    }
+}@media screen and (max-width:800px){.box-image{display: none; }}
+@media screen and (min-width:1000px){.box-image{max-height: 200px;transform: translate(-110px,205px) }}
+@media screen and (min-width:1200px){.box-image{max-height: 30vh;transform: translate(-110px,240px) }}
+
+.box-hover{transform: translate(-120px, 178px);}
+@media screen and (min-width:1000px){.box-hover{transform: translate(-130px,205px) }}
+@media screen and (min-width:1200px){.box-hover{transform: translate(-130px,240px) }}
+
+/*style for mobile illustration image*/
+.image .mobile-illustration{position:absolute; transform: translate(-13px,-58px);}
+
+
+.faq-content{
+  padding: 60px 0;
+  height:auto;
+
+}@media screen and (max-width:800px){.faq-content{display: flex; flex-direction: column; align-items: center;justify-content: center; padding:0px; height: auto;}}
+
+.faq-content h2{font-size: 24px; color: hsl(238, 29%, 16%)}
+
+.faq-content .question{
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    padding: 10px 10px 10px 0;
+    width:80%;
+}@media screen and (max-width:800px){.faq-content .question{padding:12px; width:90%; display: flex; justify-content: center;align-items: center; flex-direction: column;}}
+
+.faq-content .question p{
+    font-size: 14px;
+    margin:0;
+}@media screen and (max-width:500px){.faq-content .question p{font-size: 13px;}}
+
+.faq-content .question .first{cursor:pointer; width:100%;align-self: center; display:flex; align-items: center; justify-content: space-between;}
+
+/*dropdown arrow */
+.first span{ height:28px; padding-bottom: 10px; cursor: pointer; color:hsl(14, 88%, 65%);}
+
+.faq-content .question p.top{margin-bottom: ; height:; color:#4a4b5e}
+
+.hoverColour{color:hsl(14, 88%, 65%)!important;}
+.changeColour{color:  #20224e!important; font-weight: 700;}
+
+.faq-content .question p.bottom{ 
+    display: none; 
+    align-self: flex-start;
+    width:90%; 
+    font-size: 13px; 
+    color:hsl(240, 6%, 50%); 
+    transition: .3s;
+    transition:ease-in;
+}
+@media screen and (max-width:500px){.faq-content .question p.bottom{font-size: 11px;}}
+
+.show{ display:inherit!important; animation: displayEase 1s;}
+
+p.bottom.two{width:100%; align-self: flex-start;}
+
+@keyframes displayEase{
+    0%{opacity:0.5;}
+    50%{opacity: 1; }
+} 
+
+.attribution { 
+    height:6vh; 
+    flex-shrink:0; 
+    font-size: 14px; 
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(229, 23%, 23%);
+}
+
+.attribution p{line-height: 18px;}
+
+.attribution a { color: #ffffff; text-decoration: none; margin-bottom: 5px; }
