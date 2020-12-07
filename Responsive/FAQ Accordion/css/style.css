@@ -22,6 +22,7 @@ html,body{margin:0; padding:0;}
     width:90%;
     border-radius: 10px;
     padding:100px 0;
+    margin-bottom: 15px;
 }@media screen and (max-width:800px){
     .root-container{padding:80px 0 0 0;}
  }@media screen and (max-width:800px){
@@ -56,7 +57,7 @@ html,body{margin:0; padding:0;}
 /*web background pattern*/
 @media screen and (min-width:801px){
     .image::before{
-        background-image: url("../images/bg-pattern-desktop.svg");
+        background-image: url("bg-pattern-desktop.svg");
         content: '';
         background-size: contain;
         background-position:-6vw 100px;
@@ -69,7 +70,7 @@ html,body{margin:0; padding:0;}
     }
 
     .image::after{
-        background-image: url("../images/illustration-woman-online-desktop.svg");
+        background-image: url("illustration-woman-online-desktop.svg");
         content: '';
         position: absolute;
         left:0;
@@ -82,6 +83,8 @@ html,body{margin:0; padding:0;}
        min-width: 320px;
        overflow: hidden;
     }
+
+    .faq-container{width:100%; }
 }
 
 /*mobile illustration styling*/
@@ -102,7 +105,7 @@ html,body{margin:0; padding:0;}
     .mobile-bg{z-index: 999; transform: translate(-12px, -107px);}
 
     .image::before{
-        background-image: url("../images/bg-pattern-mobile.svg");
+        background-image: url("bg-pattern-mobile.svg");
         content: '';
         position: absolute;
         left:0;
