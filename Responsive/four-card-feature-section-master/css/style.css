@@ -32,13 +32,13 @@ section{
 
 .heading p{margin: 0;}
 
-.heading #first-title{line-height:13px; color:hsl(234, 12%, 34%); font-weight: 200; font-size: 25px;}
+.heading #first-title{line-height:14px; color:hsl(234, 12%, 34%); font-weight: 200; font-size: 32px;}
 
-.heading #second-title{line-height:65px; color:hsl(234, 12%, 34%); font-weight: 600; font-size: 23px;}
+.heading #second-title{line-height:70px; color:hsl(234, 12%, 34%); font-weight: 600; font-size: 28px;}
 
-.heading #third-title{color:hsl(229, 6%, 66%);; font-weight: 400; font-size: 15px;}
+.heading #third-title{color:hsl(229, 6%, 66%);; font-weight: 400; font-size: 18px;}
 
-.content{  display:grid; grid-template-columns: repeat(3, 1fr); grid-gap:25px; width: 100%; padding: 40px 0 20px 0; }
+.content{  display:grid; grid-template-columns: repeat(3, 1fr); grid-gap:25px; width: 100%; padding: 40px 0 10px 0; }
 
 .supervisor, .team-builder-karma, .calculator{ min-height:500px; display: grid; align-content: center; width: 100%;}
 @media screen and (max-width:800px){.supervisor, .team-builder-karma, .calculator{min-height: auto;} .content{grid-template-columns: 1fr;}}
@@ -62,7 +62,6 @@ section{
 .team-builder-karma{display: grid; grid-gap: 25px;}
 
 .attribution { 
-    height:6vh; 
     flex-shrink:0; 
     font-size: 14px; 
     text-align: center; 
