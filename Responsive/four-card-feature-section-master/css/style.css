@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+html,body {padding: 0; margin: 0;}
+
+.root-container{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 30px;
+    background: hsl(0, 0%, 98%);
+}
+
+section{
+    flex:1 0 auto; 
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1100px;
+
+}
+
+.heading{width:50%; padding-top: 50px; text-align: center;}@media screen and (max-width:800px){.heading{width: 100%;}}
+
+.heading p{margin: 0;}
+
+.heading #first-title{line-height:13px; color:hsl(234, 12%, 34%); font-weight: 200; font-size: 25px;}
+
+.heading #second-title{line-height:65px; color:hsl(234, 12%, 34%); font-weight: 600; font-size: 23px;}
+
+.heading #third-title{color:hsl(229, 6%, 66%);; font-weight: 400; font-size: 15px;}
+
+.content{  display:grid; grid-template-columns: repeat(3, 1fr); grid-gap:25px; width: 100%; padding: 40px 0 20px 0; }
+
+.supervisor, .team-builder-karma, .calculator{ min-height:500px; display: grid; align-content: center; width: 100%;}
+@media screen and (max-width:800px){.supervisor, .team-builder-karma, .calculator{min-height: auto;} .content{grid-template-columns: 1fr;}}
+
+.card{border-radius: 5px 5px 0 0; box-shadow: 0 4px 10px -2px rgb(177, 176, 176);  padding:40px 25px 30px 25px; display:flex; flex-direction: column; height:auto}
+
+.card h5{color:hsl(234, 12%, 34%); margin: 0; font-size: 18px;}
+
+.card p{font-size: 13px; color:hsl(229, 6%, 66%); width:82%; margin-top: 10px;}
+
+.card img{ align-self: flex-end; padding-top: 20px; height:50px}
+
+.supervisor .card{ border-top: 4px solid #64e1dc;}
+
+.card.team{border-top: 4px solid #e63950;}
+
+.card.karma{border-top: 4px solid #fdbf00;}
+
+.calculator .card{border-top: 4px solid #549ef2}
+
+.team-builder-karma{display: grid; grid-gap: 25px;}
+
+.attribution { 
+    height:6vh; 
+    flex-shrink:0; 
+    font-size: 14px; 
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(229, 23%, 23%);
+}
+
+.attribution p{line-height: 18px;}
+
+.attribution a { color:#e63950; text-decoration: none; margin-bottom: 5px; }
