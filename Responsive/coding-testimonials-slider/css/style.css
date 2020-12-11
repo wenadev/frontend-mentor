@@ -87,7 +87,7 @@ img{ object-fit: contain;  height:100%; width:100%; transition: .1s;}
 
 @media screen and (min-width:800px){.slider{width:55%;}}
 
-@media screen and (max-width:800px){.slider::before{top:unset} #myCarousel{top:unset; padding-top: 30px;}}
+@media screen and (max-width:800px){.slider::before{top:0;} #myCarousel{top:unset; padding-top: 30px;}}
 
 .carousel-inner{box-shadow: 1px 1px 15px #707070; }
 
