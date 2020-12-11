@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+
+
+</head>
+<body>
+  <div class="root-container">
+
+    <section>
+      <div class="quotes">
+        <p class="display personal-quote">"I've been interested in coding for a while but never taken the jump, until now. 
+          I couldn't recommend this course enough. I'm now in the job of my dreams and so excited about
+          the future."
+        </p>
+        <div class="display profile">
+          <p class="display name">Tanya Sinclair</p>
+          <p class="display bio">UX Engineer</p>
+        </div>
+        
+      </div>
+
+      <div class="slider">
+        
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">        
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="images/image-tanya.jpg" alt="tanya profilepic">
+              <div class="carousel-caption">
+                <p class="personal-quote">"I've been interested in coding for a while but never taken the jump, until now. 
+                  I couldn't recommend this course enough. I'm now in the job of my dreams and so excited about
+                  the future."
+                </p>
+        
+                <p class="name">Tanya Sinclair</p>
+        
+                <p class="bio">UX Engineer</p>
+              </div>
+            </div>
+        
+            <div class="item">
+              <img src="images/image-john.jpg" alt="John profile pic">
+              <div class="carousel-caption">
+                <p class="personal-quote">"If you want to lay the best foundation possible I'd recommend taking this course.
+                  The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer."
+                </p>
+        
+                <p class="name">John Tarkpor</p>
+        
+                <p class="bio">Junior Front-end Developer</p>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Left and right controls -->
+          <div class="controls">
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <img src="images/icon-prev.svg" alt="prev icon for slider control" class="control left">
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <img src="images/icon-next.svg" alt="next icon for slider control" class="control right">
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        
+
+      </div>
+   
+    </section>
+  
+ 
+  <div class="attribution">
+    <p>Challenge by &nbsp;<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>.<br/> 
+    Coded by &nbsp; <a href="https://www.frontendmentor.io/profile/wenadev">wenadev</a>.</p> 
+  </div>
+</div>
+<script src="js/main.js"></script>
+
+</body>
+</html>
+

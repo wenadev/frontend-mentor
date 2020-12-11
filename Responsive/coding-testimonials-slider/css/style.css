@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
+
+html,body{margin:0; padding:0;}
+
+.root-container{
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0 20px;
+    position: relative;
+}
+
+.root-container::before{
+    content:'';
+    background-image: url("../images/pattern-curve.svg");
+    background-repeat: no-repeat;
+    height:130px;
+    width:100%;
+    position: absolute;
+    bottom:0;
+    z-index: -1;
+}
+section{
+    height:auto;
+    min-height:90vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: stretch;
+    width:99%;
+    max-width: 1300px;
+
+}
+
+.quotes, .slider{position: relative; overflow: hidden; min-height: 100%!important}
+
+@media screen and (max-width:800px){section{flex-direction: column-reverse;}
+.quotes, .slider{ height:100%!important;}
+}@media screen and (min-width:800px){.quotes{padding-top: 160px;  width:45%;}}
+
+.quotes{font-size: 18px; color:hsl(240, 38%, 20%); z-index:10;overflow: visible;}
+@media screen and (max-width:800px){.quotes{text-align: center; overflow: hidden;}}
+
+.quotes::before{
+    content: '';
+    background: url("../images/pattern-quotes.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    height:70px;
+    left:20%;
+    width:100%;
+}
+@media screen and (max-width:800px){.quotes::before{left:40%; top:0;height:50px;} .quotes{height: 50%!important; padding: 20px;}}
+
+
+.name{color:hsl(240, 38%, 20%); font-size:15px; font-weight: 700; margin-right:10px; }
+.bio{color:hsl(240, 18%, 77%); font-size: 14px; }
+
+@media screen and (max-width:800px){.name{margin-bottom: 3px;}}
+
+.profile{margin-top: 25px;}
+
+@media screen and (min-width:800px){.personal-quote{font-size: 2.2vw; width:125%; z-index:10;margin-top: 40px;} .profile{display: flex; align-items: center;}}
+
+.slider{z-index:1; padding:20px 40px; display: flex; justify-content: center;}
+
+#myCarousel{position: relative;  top:10%;height:90%; background:transparent}
+
+img{ object-fit: contain;  height:100%; width:100%; transition: .1s;}
+
+.slider::before{
+    content: '';
+    background: url("../images/pattern-bg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    top:5%;
+    transition: .1s;
+    height:100%;
+    width:100%;
+}@media screen and (max-width:1000px){.slider::before{top:15%;} #myCarousel{top:15%}}
+
+@media screen and (min-width:800px){.slider{width:55%;}}
+
+@media screen and (max-width:800px){.slider::before{top:unset} #myCarousel{top:unset; padding-top: 30px;}}
+
+.carousel-inner{box-shadow: 1px 1px 15px #707070; }
+
+.controls{ box-shadow: 1px 1px 5px #888888;  position: relative; left:10%;  bottom:20px;  background: #ffffff; z-index: 20; height:20px; width:15%; padding: 20px 30px; border-radius: 25px}
+@media screen and (max-width:800px){.controls{left:45%;}}
+
+.carousel-control{ width:10px; height:12px; background-image:unset!important;}
+
+.left.carousel-control{  left:9px; top:4px}
+
+.right.carousel-control{  right:9px; top:4px}
+
+.carousel-caption p{visibility: hidden;;}
+
+.attribution { 
+    height:6vh; 
+    flex-shrink:0; 
+    font-size: 13px; 
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(229, 23%, 23%);
+
+}
+
+.attribution p{line-height: 18px;}
+
+.attribution a { color: hsl(240, 18%, 77%); text-decoration: none; margin-bottom: 5px; }
