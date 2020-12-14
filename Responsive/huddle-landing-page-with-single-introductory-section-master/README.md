@@ -1,5 +1,28 @@
 # Frontend Mentor - Huddle landing page with single introductory section
 
+<div align="center">
+   Solution for a challenge from  <a href="https://www.frontendmentor.io/" target="_blank">FrontendMentor.io</a>.
+</div>
+
+<div align="center">
+  <h3>
+    <a href="https://huddie-landing-page.netlify.app">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://github.com/wenadev/frontend-mentor/tree/main/Responsive/huddle-landing-page-with-single-introductory-section-master">
+      Solution
+    </a>
+    <span> | </span>
+    <a href="https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0">
+      Challenge
+    </a>
+  </h3>
+</div>
+
+
+## Overview
+
 ![Design preview for the Huddle landing page with single introductory section](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
