@@ -80,6 +80,11 @@ h1, h3, p, span, h4{margin: 10px;}
     color:#ffffff;
     box-shadow: 0 4px 5px -2px hsl(0, 0%, 42%);
     font-family: 'Karla', sans-serif;
+    cursor: pointer;
+}
+
+.sub button:hover{
+    background:hsl(71, 69%, 53%) ;
 }
 
 .ques{background: #4abebd; color:hsl(204, 43%, 93%); padding:20px}
