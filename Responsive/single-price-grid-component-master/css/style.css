@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;700&display=swap');
+
+html,body {padding: 0; margin: 0; overflow-x: hidden;}
+
+.root-container{
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background: hsl(204, 43%, 93%);
+    padding:0 30px
+}
+
+section{
+    min-height:80vh;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+} 
+
+.section-container{
+    width:100%;
+    height: auto;
+    display:grid;
+    grid-template-rows: auto 2fr;
+    box-shadow: 0 4px 10px -2px hsl(0, 0%, 68%);
+    border-radius: 5px;
+    overflow: hidden;
+}@media screen and (max-width:800px){.section-container{height: auto;}}
+
+.join{
+    background: #ffffff;
+    padding: 20px;
+}
+
+h1, h3, p, span, h4{margin: 10px;}
+
+.join h1{color:#2bb3b1; margin-bottom: 25px;}
+
+.join h3{color:hsl(71, 73%, 54%); margin-bottom: 20px; max-width: 70%;}
+
+.join p{color:hsl(218, 22%, 67%); font-size: 17px; max-width: 90%;}
+
+.sub-and-ques{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr))
+}@media screen and (max-width:800px){.sub-and-ques{grid-template-columns: repeat(auto-fit, minmax(100%, 1fr))}}
+
+.sub {
+    padding: 20px;
+    background:#2bb3b1;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub .per-month{ display: flex; align-items: center; font-weight: 700; margin-top:3px;}
+
+.per-month p{font-size: 32px; margin-right: 0!important;}
+
+.per-month span{font-weight: 200;}
+
+.sub #access{font-weight: 300; font-size: 17px;}
+
+.sub button{
+    text-align: center; 
+    margin: 20px 0 0 10px; 
+    width:90%; 
+    padding:18px; 
+    font-size: 16px;
+    border-radius: 5px; 
+    outline: none; 
+    border: none; 
+    background:  hsl(71, 73%, 54%); 
+    color:#ffffff;
+    box-shadow: 0 4px 5px -2px hsl(0, 0%, 42%);
+    font-family: 'Karla', sans-serif;
+}
+
+.ques{background: #4abebd; color:hsl(204, 43%, 93%); padding:20px}
+
+.ques #why-us{padding-top: 8px;}
+
+.ques p{margin: 6px 10px; font-size: 15px; font-weight: 300;}
+
+.attribution { 
+    height:6vh; 
+    flex-shrink:0; 
+    font-size: 14px; 
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(229, 23%, 23%);
+}
+
+.attribution p{line-height: 18px;}
+
+.attribution a { color:#4abebd; text-decoration: none; margin-bottom: 5px; }
