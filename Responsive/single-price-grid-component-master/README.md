@@ -1,5 +1,29 @@
 # Frontend Mentor - Single Price Grid Component
 
+<h1 align="center">My Portfolio</h1>
+
+<div align="center">
+   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
+</div>
+
+<div align="center">
+  <h3>
+    <a href="https://single-price-grid-section.netlify.app">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://github.com/wenadev/frontend-mentor/tree/main/Responsive/single-price-grid-component-master">
+      Solution
+    </a>
+    <span> | </span>
+    <a href="https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc">
+      Challenge
+    </a>
+  </h3>
+</div>
+
+## Overview
+
 ![Design preview for the Single Price Grid Component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
