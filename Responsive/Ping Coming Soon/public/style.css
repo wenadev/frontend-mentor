@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+.root-container{
+    font-size: 18px;
+    font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    background-color: linear-gradient(hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+header{ padding: 50px 0 10px 0;}
+
+section{
+    height:auto;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+
+.subscribe{text-align: center; padding-bottom: 30px;}
+
+.subscribe h1{margin-bottom:0; color: hsl(0, 0%, 59%); font-weight: 300; font-size: xx-large;}
+
+h1 span{color:hsl(209, 33%, 12%); font-weight: 700;}
+
+.subscribe p{margin: 10px 0 0 0;}
+
+form{min-width:100%; display:flex; flex-direction: column; align-items: center; padding-bottom: 30px;}
+
+.input-group{width:45%; display: flex; }
+@media screen and (max-width:800px){.image{padding: 0 20px;} .input-group{flex-direction: column; width:70%; align-items: center;} button{width:95%!important; margin-left: unset!important; padding:14px 15px;} div.image{width:80%!important;}}
+
+form input{width:90%; border-radius: 20px; outline:none; border:1px solid rgb(150, 150, 150, 0.4); padding: 14px; margin-bottom: 10px;}
+
+input::placeholder{color:rgb(150, 150, 150)}
+
+form button{outline:none; cursor:pointer; margin-left:10px; background: hsl(223, 87%, 63%); color:#fff; font-family: 'Libre Franklin'; border:none; border-radius: 20px; width:30%; font-weight: 600;}
+
+form button:hover{background:rgb(79, 125, 243, 0.9)}
+
+form p#error{display:none; color:hsl(354, 100%, 66%); font-size: 12px; margin-top: 8px;}
+@media screen and (min-width:800px){form p#error{width:42%!important; text-align: left;}}
+
+.error-show{display: inherit!important;}
+
+.error-border{border:1px solid hsl(354, 100%, 66%)}
+
+div.image{transition: .3s; height:auto; display: flex; align-items: center; padding: 0 50px; width:60%}
+
+div.image img{height: 100%; width:100%; object-fit: contain;}
+
+.social-links{padding:10px 0;  }
+
+.social-links svg{fill:hsl(223, 87%, 63%); border:  1px solid rgb(79, 125, 243,0.3); border-radius: 45%; padding: 6px; margin-right:7px}
+
+.attribution { 
+    flex-shrink:0; 
+    font-size: 14px; 
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    height: 6vh;
+}
+
+.attribution p{line-height: 18px;}
+
+.attribution a { color:hsl(223, 96%, 72%); text-decoration: none; margin-bottom: 5px; }
