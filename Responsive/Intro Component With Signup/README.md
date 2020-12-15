@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href=" https://intro-component-signup.netlify.app">
+    <a href="https://intro-component-signup.netlify.app/">
       Demo
     </a>
     <span> | </span>
