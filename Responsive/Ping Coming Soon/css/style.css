@@ -41,7 +41,7 @@ form input{width:90%; border-radius: 20px; outline:none; border:1px solid rgb(15
 
 input::placeholder{color:rgb(150, 150, 150)}
 
-form button{outline:none; cursor:pointer; margin-left:10px; background: hsl(223, 87%, 63%); color:#fff; font-family: 'Libre Franklin'; border:none; border-radius: 20px; width:30%; font-weight: 600;}
+form button{outline:none; cursor:pointer; margin-left:10px; margin-bottom: 10px; background: hsl(223, 87%, 63%); color:#fff; font-family: 'Libre Franklin'; border:none; border-radius: 20px; width:30%; font-weight: 600;}
 
 form button:hover{background:rgb(79, 125, 243, 0.9)}
 
@@ -58,7 +58,7 @@ div.image img{height: 100%; width:100%; object-fit: contain;}
 
 .social-links{padding:10px 0;  }
 
-.social-links svg{fill:hsl(223, 87%, 63%); border:  1px solid rgb(79, 125, 243,0.3); border-radius: 45%; padding: 6px; margin-right:7px}
+.social-links svg{transition:.5s; fill:hsl(223, 87%, 63%); border:  1px solid rgb(79, 125, 243,0.3); border-radius: 45%; padding: 6px; margin-right:7px}
 .social-links svg:hover{background-color:hsl(223, 87%, 63%) ; fill:#fff; cursor: pointer;}
 
 .attribution { 
