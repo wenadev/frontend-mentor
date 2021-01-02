@@ -45,7 +45,6 @@ section{
     width: 100%;
     max-width: 1000px;
     color:#fff;
-
 }
 
 .view{
@@ -58,8 +57,8 @@ section{
     margin: 10px 20px;
     background: hsl(228, 56%, 26%);
 }@media screen and (min-width:1000px){
-    .component-body.one{width:35%; }
-    .component-body.two{width:65%}
+    .component-body.one{width:30%; }
+    .component-body.two{width:70%}
 }
 @media screen and (max-width:1000px){
     .component-body{width:70%}
@@ -112,6 +111,49 @@ span{font-weight: 700;}
 .storage-numbers{display: flex; justify-content: space-between;}
 
 .storage-numbers p{font-weight: 700; font-size: 14px;}
+
+.remaining-storage {
+    background: #fff; 
+    color:hsl(229, 57%, 11%); 
+    padding:15px 30px; 
+    display: flex; 
+    align-items: center; 
+    justify-items: center; 
+    border-radius: 10px;
+    text-align: center;
+    font-weight:100 ;
+    border-radius: 8px;
+    position: relative;
+    width:120px;
+  }
+  @media screen and (max-width:1000px){
+   .remaining-storage{
+       width: auto;
+        position: relative;
+        transform: translate(0%,-50%);
+   }
+
+   .remaining-storage.desktop{display: none;}
+  }@media screen and (min-width:1000px){ .remaining-storage.mobile{display: none;}}
+
+  .remaining-storage.desktop.sb9:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #fff;
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid transparent;
+    right: 0;
+    bottom: -13px;
+   }
+
+.remaining-storage.desktop{position: absolute;transform:  translate(130%, -100%);}
+
+.remaining-storage p{font-size: 40px; font-weight: 700; margin:0 6px 0 0;}
+
+.remaining-storage span{font-weight: 400; font-size: 15px;}
 
 .attribution { 
     flex-shrink:0; 
