@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 
-html,body{margin:0; padding:0;}
+html,body{margin:0; padding:0; overflow-x: hidden;}
 
 .root-container{
     font-family: 'Poppins', sans-serif;
@@ -19,6 +19,7 @@ html,body{margin:0; padding:0;}
     display:flex;
     flex-direction: column;
     width: 100%;
+    max-width: 1600px;
 }
 
 .header-logo-second-half{font-family: 'Open Sans'; background: hsl(193, 100%, 96%); z-index: 1; width: 100%; }
@@ -148,7 +149,7 @@ section{
 
 }
 
-.card.build{display: flex; flex-direction: column;margin: 0 auto; position: relative; transform: translate(0, 55%); z-index: 1; background: #fff;}
+.card.build{display: flex; flex-direction: column;margin: 0 auto; position: relative; transform: translate(0, 55%); z-index: 1; background: #fff; box-shadow: 0 -2px 10px -5px #333!important;}
 
 .card.build button{box-shadow: 1px 1px 10px rgb(172, 172, 172)}
 
@@ -156,7 +157,6 @@ footer{
     background: hsl(192, 100%, 9%);
     color:#fff;
     padding: 150px 100px 20px 100px;
-    z-index: -1;
 }
 
 .contact img{height: 20px; margin-right: 35px;}
@@ -181,18 +181,25 @@ footer .text, .social-links{width:auto; width: 25%; margin-right:30px }
         .content{flex-direction: column;} 
         .text{margin: 0; width:100%!important} 
         .text-container{flex-direction: column;}
+        .text.link p{max-width: 20%;}
         .social-links{align-self: center; width: 100%!important; margin-top: 5px; margin-right: 0px;}
     }
 
-.text p{font-size: 14px; margin: 15px 0 7px 0;}
+.text p{ font-size: 14px; margin: 15px 0 7px 0;}
+
+
+.text.link p:hover{color:hsl(322, 100%, 66%); cursor:pointer}
 
 .social-links{ display: flex; justify-content: space-between; align-items: center; flex-direction: column;}
+.social-links a{cursor:pointer;}
+
 
 .social-links p{text-align: center; font-size: 12px;}
 
 .logo{display: flex; align-items: center;}
 
-.social-links img{margin-right: 10px; border-radius: 50%; padding:10px; border:1px solid white; height:20px}
+.social-links img{transition: .3s; margin-right: 10px; border-radius: 50%; padding:10px; border:1px solid white; height:20px}
+.social-links a:hover img{transform: scale(1.1); box-shadow: 1px 1px 5px #000; border:1px solid hsl(322, 100%, 66%) }
 
 @media screen and (max-width:1000px)
 {
@@ -210,7 +217,6 @@ footer .text, .social-links{width:auto; width: 25%; margin-right:30px }
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
     color:#fff;
 }
 
