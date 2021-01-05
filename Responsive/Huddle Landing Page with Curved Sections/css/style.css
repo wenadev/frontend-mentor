@@ -24,24 +24,6 @@ html,body{margin:0; padding:0;}
 
 .header-logo-second-half{font-family: 'Open Sans';  z-index: 1; width: 100%; }
 
-.header-logo-second-half::before{
-    content: '';
-    background-image: url("../images/bg-hero-desktop.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    position: absolute;
-    height:500px;
-    width: 100%;
-    z-index: -1;
-}@media screen and (max-width:850px){
-    .header-logo{ padding:0 20px; }
-
-    .header-logo-second-half::before{
-    background-image: url("../images/bg-hero-mobile.svg");
-    background-size: contain;
-}
-}
-
 .header-logo{
     flex-shrink: 0;
     height:auto;
