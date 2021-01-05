@@ -131,7 +131,7 @@ section{
 .cards{padding:0 70px; margin: 50px 0; display: flex; flex-direction: column; align-items: center; }
 
 .card{padding:50px 80px; width: auto; margin-bottom: 40px; border-radius: 8px; box-shadow: 1px 1px 10px rgb(224, 224, 224); display: flex; align-items: center;}
-
+.card-text{padding:0 30px}
 .card h2{font-size: 28px;}
 
 .card p{font-size: 18px; width: 100%; line-height: 30px;}
