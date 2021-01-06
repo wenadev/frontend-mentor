@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+
+html,body{margin:0; padding:0; scroll-behavior: smooth; overflow-x: hidden; }
+
+.root-container{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.view{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.header-logo-second-half{color:#fff; font-family: 'Raleway'; z-index: 1; width: 100%; background: hsl(217, 28%, 15%);}
+
+.header-logo{
+    flex-shrink: 0;
+    height:auto;
+    align-self: flex-start;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 50px;
+    margin-top: 30px;
+}
+
+
+.header-logo img{
+    height:35px!important;   
+    transition: .1s;     
+}@media screen and (max-width:850px){
+    .header-logo img{height: 21px;}
+    .header-logo {padding: 0 20px;}
+}
+
+.header-logo nav{
+    display: flex;
+    justify-content: space-between;
+    min-width:200px;
+    width:30%;
+}
+
+nav p{transition: .2s; border:1px solid transparent}
+
+nav p:hover{transform: scale(1.1); color:hsl(176, 68%, 64%); cursor: pointer; font-weight: 700; border-bottom: 1px dotted hsl(176, 68%, 64%) ;}
+
+.second-half{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    font-family: 'Open Sans';
+    z-index: 3;
+    position: relative;
+}
+
+.second-half .image{height: 300px; }
+@media screen and (max-width:850px){.second-half{flex-direction: column; padding:30px; } .second-half .image{margin-top: 30px;}}
+@media screen and (max-width:450px){ .second-half .image{height: 350px; }}
+
+.image img{height:100%; width:100%; object-fit: contain;}
+
+.second-half .text{text-align: center;}
+
+.text h1, .card.one h2{ font-weight: 700; margin-bottom:3%; font-size: 35px;}
+.text p, .card.one p{font-size: 20px;}
+.second-half .text p{width:80%!important; margin: 0 auto; margin-bottom: 20px;}
+
+form{
+    display:flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+form input{transition:.2s; width:60%; margin-right: 20px; padding:13px 0 13px 10px; outline: none; border-radius: 20px;}
+
+ button{
+    width:40%;
+    background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    outline: none;
+    padding:13px 50px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+button:hover{background:hsl(176, 68%, 64%); cursor: pointer; }
+
+@media screen and (max-width:850px){
+    .second-half .text{display: flex; flex-direction: column; align-items: center;}
+   .header-logo-second-half .text h1, .card.one h2{text-align: center; font-size: 28px;}
+    .header-logo-second-half .text p, .card.one p{text-align: center; width: 100%; font-size: 17px!important;}
+}
+@media screen and (max-width:1050px){
+    form{flex-direction: column; width:80%}
+    form input{width:100%; margin-right: 0;}
+     button{width:100%; margin-top: 10px;}
+}
+
+
+section{
+    flex:1 0 auto; 
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: 'Open Sans';
+}
+
+.cards{display: flex; flex-direction: column; align-items: center; }
+
+.card{padding:50px; display: flex; align-items: center;}
+
+.card-text{ display: flex;}
+
+.card  .image, .card-text .productive-text{width:50%}
+
+.productive-text{padding-left: 30px;}
+
+.card-text p#fylo-works{z-index: 2; font-size: 16px; color:hsl(170, 45%, 43%); border-bottom:1px solid hsl(170, 45%, 43%); display: flex; align-items: center; margin-top: 10px; width: 180px !important;}
+
+.card-text p#fylo-works:hover{cursor: pointer; color:#fff; border-bottom:1px solid #fff;}
+
+.card-text img{margin-left: 5px;}
+
+.card h2{font-size: 28px; font-family: 'Raleway';}
+
+.card p{font-size: 18px; width: 100%; line-height: 30px; color:rgb(255, 255, 255,0.8)}
+
+.cards .image{height:350px}
+
+.image img{height:100%; width:100%; object-fit: contain;}
+
+
+.card.one{
+    background: hsl(218, 28%, 13%);
+    color:#fff;
+    padding: 60px 0;
+    position: relative;
+}
+
+.max-desc{
+    margin: 0 auto;
+    display: grid;
+    grid-gap:20px;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+}
+
+.card.one .desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+
+.desc h2{text-align: center; font-size: 24px!important;}
+
+.desc p{font-size: 16px!important; margin-top: 0; color:rgb(255, 255, 255,0.8); width: 80%;}
+
+.desc img{height:100px}
+
+
+.second-half::after{
+    content: '';
+    background-image:url("../images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    background-size: 100%;
+    bottom: -1%;
+    left:0%;
+    height:100%;
+    width:100%;
+    z-index: -1;   
+}
+@media screen and (max-width:600px){.card.one::before{background-image: url("../images/bg-curvy-mobile.svg");  bottom: -10%;}}
+@media screen and (max-width:280px){.card.one::before{top:-3%;} .header-logo img{height:20px!important} nav{font-size: 14px; min-width: 160px!important;}}
+
+
+.card.two{background: hsl(218, 28%, 13%); color:#fff;}
+
+.card.two p{font-size: 15px; width: 80%;}
+
+.early-access{margin-right: 30px;  width:50%}
+
+.card.three{
+    background: hsl(218, 28%, 13%); 
+    padding: 0 8rem;
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;;
+}
+
+.card.three::before{
+    content: '';
+    background: url("../images/bg-quotes.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height:100%;
+    width:100%;
+    transform: translate(10%, 4%);
+    z-index: 1;
+}
+
+.testimonial-card .bio{margin-top:20px; display: flex; align-items: center;}
+
+.card.three .testimonial-card{
+    margin-top: 50px;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0,0.2);
+    padding: 30px;
+    border-radius:5px ;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(219, 30%, 18%);
+    z-index: 2;
+}
+
+.bio img{height: 50px; border-radius: 50%; margin-right: 15px;}
+
+.bio p{text-align: left!important; font-family: 'Raleway'; font-weight: 700; margin:0px!important; font-size: 14px!important;}
+
+.bio span{color:rgb(255, 255, 255,0.8); font-size: 12px!important; margin: 0!important; ;}
+
+
+p.testimony{font-size: 16px; width:80%; text-align: left!important; }
+
+.card.early{background: hsl(218, 28%, 13%); width:95%}
+
+.card.build{color: #fff; display: flex; flex-direction: column;margin: 0 auto; position: relative; transform: translate(0, 45%);  background: hsl(217, 28%, 15%); box-shadow: 1px 1px 7px rgb(0, 0, 0,0.2)!important; width:60%}
+
+.card.card.build h2{font-family: 'Raleway';}
+
+.card.build p{ line-height: normal; font-size: 16px; color: rgb(255, 255, 255,0.8); width: 85%!important; text-align: center;}
+
+.card.build form{width: 100%;}
+
+@media screen and (max-width:1000px){ .card.three{grid-template-columns: 1fr; justify-items: center;}
+.testimonial-card{width:100%} .max-desc{ grid-template-columns: 1fr;} .card.three{padding: 0 3rem;} 
+.card.three::before{background-size: 35px;  transform: translate(5%,2%);}}
+
+@media screen and (max-width:850px){
+    
+    .card{flex-direction: column; align-items: center; justify-content: center; padding: 40px;}
+    .card-text{ flex-direction: column;}
+    .card  .image, .card-text .productive-text{width: 100%; padding-left: 0;}
+    .cards .image{height: 200px}
+    .card h2, .card p{text-align: center;  width:100%!important}
+    .card.two h2, .card.two p, p#fylo-works{text-align: left!important;}
+    .early-access{margin-right: 0}
+    .testimonial p, .testimonial span{text-align: left!important;}
+}
+
+footer{
+    background: hsl(216, 53%, 9%);
+    color:#fff;
+    padding: 150px 50px 20px 50px;
+}
+
+.contact{margin-top: 20px; display: flex;}
+
+.contact img{height: 20px; margin-right: 35px;} 
+
+.contact p{ margin: 0!important; width:70%; }
+
+.fylo-logo{margin-bottom: 20px;}
+
+footer .text, .social-links{width:auto; width: 25%; margin-right:30px }
+@media screen and (min-width:1000px){ .footer .text, .social-links{margin-right: unset!important;}}
+
+.text-container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+    @media screen and (max-width:1000px){
+        .card.build{transform: translate(0, 25%); width:75%}
+        .card.build h2{text-align: center;}
+        .content{flex-direction: column;} 
+        .text{margin: 0; width:100%!important} 
+        .text-container{flex-direction: column;}
+        .text.link p{max-width: 20%;}
+        .social-links{align-self: center; width: 100%!important; margin-top: 5px; margin-right: 0px;}
+    }
+
+.text p{border: 1px solid transparent; font-size: 14px; margin: 15px 0 7px 0;transition: .3s; cursor: pointer;}
+
+.text.link p:hover{ text-shadow: 2px 2px 3px rgb(201, 201, 201);}
+
+.social-links{ display: flex; justify-content: space-between; align-items: center; flex-direction: column;}
+.social-links a{cursor:pointer;}
+
+.logo{display: flex; align-items: center;}
+
+.social-links svg{fill:#fff ;transition: .3s; margin-right: 10px; border-radius: 50%; padding:10px; border:1px solid white; }
+.social-links svg:hover{ fill:hsl(176, 68%, 64%); transform: scale(1.1);  border:1px solid hsl(176, 68%, 64%)}
+
+@media screen and (max-width:1000px)
+{
+    footer{padding: 100px 30px 20px 30px!important;} 
+    .text.one{margin-top: 20px;}
+    .fylo-logo{height: 25px!important; margin-bottom: 10px;}
+}
+
+.attribution { 
+    height:6vh; 
+    flex-shrink:0; 
+    margin-top: 5px;
+    font-size: 13px; 
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+}
+
+.attribution p{line-height: 18px;}
+
+.attribution a { color: hsl(176, 68%, 64%); text-decoration: none; margin-bottom: 5px; }
+
+#error{display: none; margin: 5px 0!important; text-align: left!important; font-size: 13px!important; align-self: flex-start; color:#ff0000}
+.error-show{display:inherit!important}
+.error-border{border:1px solid red}
