@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+
+html,body{margin:0; padding:0; overflow-x: hidden;}
+
+.root-container{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.view{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.header-logo-second-half{font-family: 'Raleway'; z-index: 1; width: 100%; }
+
+.header-logo{
+    flex-shrink: 0;
+    height:auto;
+    align-self: flex-start;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 50px;
+    margin-top: 30px;
+}
+
+
+.header-logo img{
+    height:35px!important;   
+    transition: .1s;     
+}@media screen and (max-width:850px){
+    .header-logo img{height: 21px;}
+    .header-logo {padding: 0 20px;}
+}
+
+.header-logo nav{
+    display: flex;
+    justify-content: space-between;
+    min-width:200px;
+    width:30%;
+}
+
+nav p{transition: .2s; border:1px solid transparent}
+
+nav p:hover{transform: scale(1.1); color:hsl(238, 22%, 44%); cursor: pointer; font-weight: 700; border-bottom: 1px dotted hsl(238, 22%, 44%) ;}
+
+.second-half{
+    display:flex;
+    align-items: center;
+    padding: 50px;
+    font-family: 'Open Sans';
+}
+
+.second-half .image{height: 450px; }
+@media screen and (max-width:850px){.second-half{flex-direction: column; padding:30px; } .second-half .image{margin-top: 30px;}}
+@media screen and (max-width:450px){ .second-half .image{height: 350px; }}
+
+.image img{height:100%; width:100%; object-fit: contain;}
+
+
+.text h1, .card.one h2{ color:hsl(243, 87%, 12%); font-weight: 700; margin-bottom:3%; font-size: 45px;}
+.text p, .card.one p{color:hsl(238, 22%, 44%);  font-size: 20px;}
+.second-half .text p{width:85%;}
+
+form{
+    display:flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+form input{transition:.2s; width:60%; margin-right: 20px; padding:13px 0; outline: none;}
+
+form button{
+    width:40%;
+    background-color: hsl(224, 93%, 58%);
+    outline: none;
+    padding:13px 50px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    transition: .2s;
+
+}
+
+form button:hover{background-color: hsl(224, 91%, 67%); cursor: pointer; }
+
+@media screen and (max-width:850px){
+    .second-half .text{display: flex; flex-direction: column; align-items: center;}
+   .header-logo-second-half .text h1, .card.one h2{text-align: center; font-size: 28px;}
+    .header-logo-second-half .text p, .card.one p{text-align: center; width: 100%; font-size: 17px!important;}
+}
+@media screen and (max-width:1050px){
+    form{flex-direction: column; width:80%}
+    form input{width:100%; margin-right: 0; padding: 10px 0;}
+    form button{width:100%; margin-top: 10px;}
+}
+
+
+section{
+    flex:1 0 auto; 
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: 'Open Sans';
+}
+
+.cards{ margin-top: 50px; display: flex; flex-direction: column; align-items: center; }
+
+.card{padding:50px; display: flex; align-items: center;}
+
+.card-text{ margin-right: 30px;}
+
+.card-text span#fylo-works{z-index: 2; font-size: 16px; color:hsl(170, 45%, 43%); border-bottom:1px solid hsl(170, 45%, 43%); display: flex; align-items: center; margin-top: 10px;}
+.card-text span#fylo-works:hover{cursor: pointer; color:hsl(170, 45%, 22%); border-bottom:1px solid hsl(170, 45%, 22%);}
+
+.card-text img{margin-left: 5px;}
+
+.card h2{font-size: 28px;}
+
+.card p{font-size: 18px; width: 100%; line-height: 30px;}
+
+.cards .image{height:350px}
+
+.image img{height:100%; width:100%; object-fit: contain;}
+
+.card.one{position: relative; margin-top: 20px; background: hsl(250, 75%, 98%);}
+
+.testimonial{
+    margin-top: 50px;
+    box-shadow: 1px 1px 10px #dddddd;
+    padding: 30px;
+    border-radius:5px ;
+}
+
+.testimonial .bio{margin-top:20px; display: flex; align-items: center;}
+
+p#testimony{font-size: 18px;}
+
+.bio img{height: 50px; border-radius: 50%; margin-right: 15px;}
+
+.bio p{color:hsl(238, 22%, 44%); font-family: 'Raleway'; font-weight: 700; margin:0px!important; font-size: 14px!important;}
+
+.bio span{font-size: 12px!important; margin: 0!important; ;}
+
+.card.two{min-width: 95%; background: hsl(238, 22%, 44%); color:#fff}
+
+.card.two p{font-size: 16px; width: 80%;}
+
+.early-access{margin-right: 30px;  width:50%}
+
+.early-access-form {width:50%; flex-direction: column!important; }
+
+.early-access-form input{margin-right: 0;}
+
+.early-access-form input, .early-access-form button{width: 100%; margin-top: 10px;}
+
+@media screen and (min-width:850px){.early-access-form button{width:51%!important; align-self: flex-start;} .card-text span#fylo-works{width:170px}}
+
+.card.one::before{
+    content: '';
+    background-image:url("../images/bg-curve-desktop.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:-9%;
+    left:0%;
+    height:100%;
+    width:100%;
+}@media screen and (min-width:1200px){.card.one::before{background-size: 100%;}}
+@media screen and (max-width:600px){.card.one::before{background-image: url("../images/bg-curve-mobile.svg"); background-size: contain; top:-4%}}
+@media screen and (max-width:280px){.card.one::before{top:-3%;} .header-logo img{height:20px!important} nav{font-size: 14px; min-width: 160px!important;}}
+
+@media screen and (max-width:1000px){  .card.one{flex-direction: column-reverse!important;}   .productive-text {display: flex; flex-direction: column; align-items: center;} }
+
+@media screen and (max-width:850px){
+    .card{flex-direction: column; align-items: center; justify-content: center; padding: 40px;}
+    .card-text{ margin-right: 0;}
+    .card p{text-align: center; width:100%!important}
+    .cards .image{height: 200px}
+    .card > *{text-align: center; width:100%}
+    .early-access{margin-right: 0}
+    .testimonial{display:flex; flex-direction: column; align-items: flex-start;}
+    .testimonial p, .testimonial span{text-align: left!important;}
+}
+
+footer{
+    background: hsl(243, 87%, 12%);
+    color:#fff;
+    padding: 150px 50px 20px 50px;
+}
+
+.contact img{height: 20px; margin-right: 35px;}
+
+.contact{margin-top: 20px; display: flex; align-items: center}
+
+.contact p{ margin: 0!important;}
+
+.fylo-logo{margin-bottom: 20px;}
+
+footer .text, .social-links{width:auto; width: 25%; margin-right:30px }
+@media screen and (min-width:1000px){ .footer .text, .social-links{margin-right: unset!important;}}
+
+.text-container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+    @media screen and (max-width:1000px){
+        .content{flex-direction: column;} 
+        .text{margin: 0; width:100%!important} 
+        .text-container{flex-direction: column;}
+        .text.link p{max-width: 20%;}
+        .social-links{align-self: center; width: 100%!important; margin-top: 5px; margin-right: 0px;}
+    }
+
+.text p{ font-size: 14px; margin: 15px 0 7px 0;}
+
+
+.text.link p:hover{color:hsl(224, 93%, 58%); cursor:pointer}
+
+.social-links{ display: flex; justify-content: space-between; align-items: center; flex-direction: column;}
+.social-links a{cursor:pointer;}
+
+.logo{display: flex; align-items: center;}
+
+.social-links svg{fill:#fff ;transition: .3s; margin-right: 10px; border-radius: 50%; padding:10px; border:1px solid white; }
+.social-links svg:hover{transform: scale(1.1); transform: translateY(-5px); box-shadow: 1px 1px 5px #000; }
+
+@media screen and (max-width:1000px)
+{
+    footer{padding: 100px 30px 20px 30px!important;} 
+    .text.one{margin-top: 20px;}
+    .fylo-logo{height: 25px!important; margin-bottom: 10px;}
+}
+
+.attribution { 
+    height:6vh; 
+    flex-shrink:0; 
+    margin-top: 5px;
+    font-size: 13px; 
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+}
+
+.attribution p{line-height: 18px;}
+
+.attribution a { color: hsl(224, 93%, 58%); text-decoration: none; margin-bottom: 5px; }
+
+.error{display: none; margin: 5px 0!important; text-align: left!important; font-size: 13px!important; align-self: flex-start;}
+.second-half .error{color:#ff0000}
+.early-access-form .error{color:hsl(250, 75%, 98%);}
+
+.error-show{display:inherit!important}
+.error-border{border:1px solid red}
