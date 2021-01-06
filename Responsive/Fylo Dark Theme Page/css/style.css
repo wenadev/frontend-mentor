@@ -47,8 +47,7 @@ html,body{margin:0; padding:0; overflow-x: hidden;}
 .header-logo nav{
     display: flex;
     justify-content: space-between;
-    min-width:200px;
-    width:30%;
+s    width:30%;
 }
 
 nav p{transition: .2s; border:1px solid transparent}
@@ -61,6 +60,8 @@ nav p:hover{transform: scale(1.1); color:hsl(238, 22%, 44%); cursor: pointer; fo
     padding: 50px;
     font-family: 'Open Sans';
 }
+
+.second-half button{width:250px}
 
 .second-half .image{height: 450px; }
 @media screen and (max-width:850px){.second-half{flex-direction: column; padding:30px; } .second-half .image{margin-top: 30px;}}
