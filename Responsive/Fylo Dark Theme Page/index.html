@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
 </head>
 <body>
   <div class="root-container">
@@ -22,141 +24,81 @@
         </div>
 
         <div class="second-half">
-          <div class="image">
-            <img src="images/illustration-intro.png" alt="">
-          </div>
-
           <div class="text">
             <h1>All your files in one secure <br/> location, accessible anywhere.</h1>
             <p>  Fylo stores your most important files in one secure location. 
               Access them wherever you need, share and collaborate with friends, 
               family, and co-workers. </p>
 
-                <a href="#register-email"><button>Get Started</button></a>
+              <form>
+                <input  data-name="first" class="email" type="email" title="email" name="email" >
+                <p data-name="first" class="error">Please check your email</p>
+                <button  data-name="first"  class="submit">Get Started</button>
+              </form>
+          </div>
+
+          <div class="image">
+            <img src="images/illustration-1.svg" alt="">
           </div>
         </div>
       </div>
   
       <section>
         <div class="cards">
-          
           <div class="card one">
-            <div class="max-desc">
-              <div class="desc">
-                <img src="images/icon-access-anywhere.svg" alt=" access anywhere illustration">
-                <h2>   Access your files, anywhere</h2>
-                <p>  The ability to use a smartphone, tablet, or computer to access your account means your 
-                  files follow you everywhere.
-                </p>
-              </div>
-  
-              <div class="desc">
-                <img src="images/icon-security.svg" alt=" security illustration">
-                <h2>  Security you can trust
-                </h2>
-                <p>   2-factor authentication and user-controlled encryption are just a couple of the security 
-                  features we allow to help secure your files.</p>
-              </div>
-  
-              <div class="desc">
-                <img src="images/icon-collaboration.svg" alt=" collaboration illustration">
-                <h2>  Real-time collaboration</h2>
-                <p>  Securely share files and folders with friends, family and colleagues for live collaboration. 
-                  No email attachments required.</p>
-              </div>
-  
-              <div class="desc">
-                <img src="images/icon-any-file.svg" alt=" any file illustration">
-                <h2>  Store any type of file</h2>
-                <p>  Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
-                  file types to be securely stored and shared./p>
-              </div>
-            </div> 
-          </div>
-
-          <div class="card two">
             <div class="card-text">
-              <div class="image">
-                <img src="images/illustration-stay-productive.png" alt="stay productive illustration">
-              </div>
-
               <div class="productive-text">
                 <h2>Stay productive, wherever you are</h2>
                 <p>Never let location be an issue when accesing your files. Fylo has you covered for all of your file storage needs. </p>
                 
                 <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
               
-                <p id="fylo-works">See how Fylo works <img src="images/icon-arrow.svg" alt="arrow"></p>          
+                <span id="fylo-works">See how Fylo works <img src="images/icon-arrow.svg" alt="arrow"></span>
+                
+                <div class="testimonial">
+                  <img src="images/icon-quotes.svg" alt="quotes">
+                  <p id="testimony">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine</p>
+                
+                  <div class="bio">
+                    <img src="images/avatar-testimonial.jpg" alt="testimonial-kyle-avatar">
+                    
+                    <div>
+                      <p>Kyle Burton</p>
+                      <span id="bio">Founder & CEO, Huddle</span>
+                    </div>
+                  </div>
+                </div>
+              
               </div>
+            </div>
+
+            <div class="image">
+              <img src="images/illustration-2.svg" alt="stay productive illustration">
             </div>
           </div>
 
-          <div class="card three">
-            <div class="testimonial-card">
-              <p class="testimony">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine</p>
-            
-              <div class="bio">
-                <img src="images/profile-1.jpg" alt="satish profile pic">
-                
-                <div>
-                  <p>Satish Patel</p>
-                  <span id="bio">Founder & CEO, Huddle</span>
-                </div>
-              </div>
+          <div class="card two">
+            <div class="early-access">
+              <h2>Get early access today</h2>
+              <p>It only takes a minute to sign up and our free starter tier is extremely generous. 
+                If you have any questions, our support team would be happy to help you.</p>
             </div>
 
-            <div class="testimonial-card">
-              <p class="testimony">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine</p>
-            
-              <div class="bio">
-                <img src="images/profile-2.jpg" alt="bruce profile pic">
-                
-                <div>
-                  <p>Bruce McKenzie</p>
-                  <span id="bio">Founder & CEO, Huddle</span>
-                </div>
-              </div>
-            </div>
+            <form class="early-access-form">
+              <input  data-name="second"  class="email" type="email" title="email" name="email">
+              <p data-name="second" class="error">Please check your email</p>
+              <button data-name="second" class="submit">Get Started</button>  
+            </form>
 
-            <div class="testimonial-card">
-              <p class="testimony">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine</p>
-            
-              <div class="bio">
-                <img src="images/profile-3.jpg" alt="iva profile pic">
-                
-                <div>
-                  <p>Iva Boyd</p>
-                  <span id="bio">Founder & CEO, Huddle</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card early">
-            <div class="card build" id="register-email">
-              <h2> Get early access today</h2>
-              <p>  It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
-                questions, our support team would be happy to help you.</p>
-              <form name="early-access">
-                <input id="email" type="email" title="email" name="email">
-                <p id="error">Please check your email</p>
-                <button id="submit">Get Started For Free</button>  
-              </form>
-              </div>
           </div>
         </div>
       </section>
     
       <footer>
         <div class="content">
-          <img class="fylo-logo" src="images/logo.svg" alt="huddle logo">
+          <img class="fylo-logo" src="images/logo-white.png" alt="huddle white logo">
 
           <div class="text-container">
-            <div class="contact">
-              <img src="images/icon-location.svg" alt="location icon">
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua</p>
-            </div>
     
             <div class="text">
               <div class="contact">
