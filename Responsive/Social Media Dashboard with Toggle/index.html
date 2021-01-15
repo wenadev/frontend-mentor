@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Social Media Dashboard</title>
+
+</head>
+<body>
+
+ <div class="root-container">
+  <header>
+    <div class="header-title">
+      <h2>Social Media Dashboard</h2>
+      <h5>Total Followers: 23,004</h5>
+    </div>
+
+    <div class="toggle">
+      <p>Dark Mode</p>
+       <!-- Rounded switch -->
+       <label class="switch">
+        <input type="checkbox">
+        <span class="slider round">
+        </span>
+      </label>
+    </div>
+
+   </header>
+   
+   <section>
+     <div class="first-half">
+      <div class="card one">
+        <div class="social-handle">
+          <img src="images/icon-facebook.svg" alt="facebook logo">
+          <span>@nathanf</span>
+        </div>
+
+        <div class="follower-count">
+          <h1>1987</h1>
+          <h6>Followers</h6>
+        </div>
+
+       <div class="metric">
+         <img src="images/icon-up.svg" alt="up arrow icon">
+        <p>12 Today</p>
+       </div>
+      </div>
+
+      <div class="card two">
+        <div class="social-handle">
+          <img src="images/icon-twitter.svg" alt="twitter logo">
+          <span>@nathanf</span>
+        </div>
+
+        <div class="follower-count">
+          <h1>1044</h1>
+          <h6>Followers</h6>
+        </div>
+
+       <div class="metric">
+         <img src="images/icon-up.svg" alt="up arrow icon">
+        <p>99 Today</p>
+       </div>
+      </div>
+
+      <div class="card three">
+        <div class="social-handle">
+          <img src="images/icon-instagram.svg" alt="instagram logo">
+          <span>@realnathanf</span>
+        </div>
+
+        <div class="follower-count">
+          <h1>11k</h1>
+          <h6>Followers</h6>
+        </div>
+
+       <div class="metric">
+         <img src="images/icon-up.svg" alt="up arrow icon">
+        <p>1099 Today</p>
+       </div>
+      </div>
+
+
+      <div class="card youtube">
+        <div class="social-handle">
+          <img src="images/icon-youtube.svg" alt="youtube logo">
+          <span>Nathan F.</span>
+        </div>
+
+        <div class="follower-count">
+          <h1>8239</h1>
+          <h6>Subscribers</h6>
+        </div>
+
+       <div class="metric">
+         <img src="images/icon-red.png" alt="up arrow icon">
+        <p>144 Today</p>
+       </div>
+      </div>
+
+     </div>
+
+     <div class="second-half">
+        <h1 id="overview">Overview - Today</h1>
+
+        <div class="second-card-container">
+          <div class="card">
+            <div class="social-handle">
+              <h4>Page Views</h4>
+              <img src="images/icon-facebook.svg" alt=" facebook logo">
+            </div>
+  
+            <div class="metric">
+              <h2>87</h2>
+  
+              <div class="metric-perc">
+                <img src="images/icon-up.svg" alt="up arrow icon">
+                <p>3%</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="social-handle">
+              <h4>Likes</h4>
+              <img src="images/icon-facebook.svg" alt="facebook logo">
+            </div>
+  
+            <div class="metric">
+              <h2>52</h2>
+  
+              <div class="metric-perc down">
+                <img src="images/icon-red.png" alt="down arrow icon">
+                <p>2%</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="social-handle">
+              <h4>Likes</h4>
+              <img src="images/icon-instagram.svg" alt=" instagram logo">
+            </div>
+  
+            <div class="metric">
+              <h2>5462</h2>
+  
+              <div class="metric-perc">
+                <img src="images/icon-up.svg" alt="up arrow icon">
+                <p>2257%</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="social-handle">
+              <h4>Profile Views</h4>
+              <img src="images/icon-instagram.svg" alt="instagram logo">
+            </div>
+  
+            <div class="metric">
+              <h2>52k</h2>
+  
+              <div class="metric-perc">
+                <img src="images/icon-up.svg" alt="up arrow icon">
+                <p>1375%</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="social-handle">
+              <h4>Retweets</h4>
+              <img src="images/icon-twitter.svg" alt="twitter logo">
+            </div>
+  
+            <div class="metric">
+              <h2>117</h2>
+  
+              <div class="metric-perc">
+                <img src="images/icon-up.svg" alt="up arrow icon">
+                <p>303%</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="social-handle">
+              <h4>Likes</h4>
+              <img src="images/icon-twitter.svg" alt="twitter logo">
+            </div>
+  
+            <div class="metric">
+              <h2>507</h2>
+  
+              <div class="metric-perc">
+                <img src="images/icon-up.svg" alt="up arrow icon">
+                <p>553%</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="social-handle">
+              <h4>Likes</h4>
+              <img src="images/icon-youtube.svg" alt="youtube logo">
+            </div>
+  
+            <div class="metric">
+              <h2>107</h2>
+  
+              <div class="metric-perc down">
+                <img src="images/icon-red.png" alt="down arrow icon">
+                <p>19%</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="social-handle">
+              <h4>Total Views</h4>
+              <img src="images/icon-youtube.svg" alt="youtube logo">
+            </div>
+  
+            <div class="metric">
+              <h2>1407</h2>
+  
+              <div class="metric-perc down">
+                <img src="images/icon-red.png" alt="down arrow icon">
+                <p>3%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+   </section>
+
+  <footer class="attribution">
+    <p>Challenge by &nbsp;<a href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H" target="_blank"> Frontend Mentor.</a> &nbsp;<br/>&nbsp;
+      Coded by &nbsp; <a href="https://www.frontendmentor.io/profile/wenadev">wenadev.</a></p> 
+  </footer>
+ </div>
+
+ <script src="js/main.js"></script>
+</body>
+</html>
