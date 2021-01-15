@@ -280,6 +280,5 @@ section{
 input:checked + .root-container::before{background-color: hsl(232, 19%, 15%);}
 .dark-color-text{color:hsl(0, 0%, 100%)!important}
 .dark-card{background:hsl(228, 28%, 20%)!important}
-.dark-card:hover{background:hsl(228, 26%, 27%)!important;}
-/*.header-title h5, social-handle span, follower-count h6*/
+.dark-card:hover, .second-card-container .dark-card:hover{background:hsl(228, 26%, 27%)!important;}
 .dark-saturated-text{color:hsl(228, 34%, 66%)!important}
