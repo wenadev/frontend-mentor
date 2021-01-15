@@ -17,12 +17,13 @@ html, body{margin: 0; padding: 0;}
 }.root-container::before{
     content: '';
     background-color:  hsl(225, 100%, 98%);
-    height:30vh;
+    height:45vh;
     width:100%;
     position: absolute;
     top:0;
     z-index: -1;
     display: block;
+    border-radius: 0 0 20px 20px;
 }
 
 header{ padding: 40px 0 10px 0;max-width: 1250px;
@@ -130,6 +131,7 @@ section{
     justify-items: center;
     align-content: center;
     width:100%;
+    margin-top: 50px;
 }
 
 .first-half .card{
@@ -153,7 +155,7 @@ section{
     background: linear-gradient(to right,hsl(37, 97%, 70%), hsl(329, 70%, 58%));
     display:block;
     height:4px;
-    max-width:23vw;
+    max-width:100%;
     width: 100%!important;
     transform: translate(0,-20px);
     position: absolute;
@@ -162,10 +164,8 @@ section{
     border-radius: 8px 8px 50% 50%;
 }@media screen and (max-width:1000px){
     .first-half{grid-template-columns: repeat(2,1fr);}
-    .card.three::before{max-width:35vw!important; width:100%!important}
 }@media screen and (max-width:700px){
     .first-half{grid-template-columns: 1fr;}
-    .card.three::before{max-width: 90vw!important; }
 }
 
 
@@ -265,7 +265,18 @@ section{
 .attribution a { color:hsl(223, 96%, 72%); text-decoration: none; margin-bottom: 5px; }
 
 /*toggle changes*/
-.dark-root-container{background-color: hsl(230, 17%, 14%);}
+.dark-root-container{background-color: hsl(230, 17%, 14%); z-index: 100;}
+.dark-root-container::before{
+    content: '';
+    background-color:  hsl(232, 19%, 15%);
+    height:45vh;
+    width:100%;
+    position: absolute;
+    top:0;
+    z-index: -1;
+    display: block;
+    border-radius: 0 0 20px 20px;
+}
 input:checked + .root-container::before{background-color: hsl(232, 19%, 15%);}
 .dark-color-text{color:hsl(0, 0%, 100%)!important}
 .dark-card{background:hsl(228, 28%, 20%)!important}
