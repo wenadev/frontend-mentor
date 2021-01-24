@@ -20,5 +20,3 @@
     </a>
   </h3>
 </div>
-
-**Have fun building!** 🚀
