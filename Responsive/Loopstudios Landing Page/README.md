@@ -20,3 +20,7 @@
     </a>
   </h3>
 </div>
+
+## Overview
+
+![Design preview for the Loopstudios Landing page challenge](./design/desktop-preview.jpg)
