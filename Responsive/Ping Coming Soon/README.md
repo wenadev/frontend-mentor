@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href=https://component-ping-coming-soon.netlify.app/">
+    <a href="https://component-ping-coming-soon.netlify.app/">
       Demo
     </a>
     <span> | </span>
