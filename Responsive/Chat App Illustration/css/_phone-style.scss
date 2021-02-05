@@ -1,0 +1,206 @@
+@import '_variables-mixins';
+
+.phone{
+    width:45%; 
+    position: relative;
+    padding: 20px 0;
+    @include displayFlex(none,center ,center);
+}
+
+.phone-container{
+    transform: translateX(24.5%);
+    width:290px;
+    height:auto;
+    background: hsl(0%, 0%, 100%);
+    border-radius: 28px;
+    padding: 12px;
+    position: relative;
+    box-shadow:  0 2px 15px -2px rgba(62, 39, 83,0.3);
+
+    @include displayFlex(column,center,none);
+}
+@media (max-width: 900px) {
+   .phone-container{height:auto; transform:none;}
+}
+
+#header-bar{
+    position: absolute;
+    top:0;
+    width:53%;
+    height:35px;
+    transform: translateY(0);
+    border-radius: 15px;
+    background:hsl(0%, 0%, 100%);
+    z-index: 2;
+}
+
+#header{
+    height:70px;
+    width:100%;
+    border-radius: 20px 20px 10px 10px;
+    background: linear-gradient(to right, $firstPrimaryColour, $secondPrimaryColour,);
+    box-shadow: 0 2px 5px -2px rgb(62, 39, 83);
+    z-index: 1;
+    padding-top:13px;
+}
+
+.header-container{
+    padding: 15px;
+    width:88%;
+    height:50px;
+    @include displayFlex(row, center, space-between);
+}
+
+.arrow-profile{
+    height:auto;
+    width:80%;
+    @include displayFlex(row, center,none);
+}
+
+.bio{
+    width:100%;
+    @include displayFlex(row, center,none);
+
+    img{
+        height:30px; 
+        border-radius: 50%; 
+        border:2px solid hsl(0%, 0%, 100%);
+        margin-right: 6%;
+    }
+}
+
+.name-status{
+    h4{
+        color:hsl(0%, 0%, 100%);
+        font-weight: 500;
+        margin: 0 0 3px 0;
+        font-size: 14px;
+    }  
+    
+    p{margin: 0; font-size: 11px; color:hsl(276, 100%, 81%)}
+}
+
+.menu-dots{ @include displayFlex(none, center,none)}
+
+.material-icons{ color:hsl(0%, 0%, 100%); }
+
+
+#phone-body{
+    height:auto;
+    background: $lightGrayishViolet;
+    width:100%;
+    border-radius: 5px 5px 25px 25px;
+}
+
+.phone-body-container{
+    padding: 15px 10px;
+    @include displayFlex(column,center, center);
+}
+
+.reciever-textbox{
+    @include textboxStyle(hsl(272, 41%, 93%), hsl(276, 55%, 52%), 13px 13px 13px 5px, 8px 10px);
+    width:60%;
+    position: relative;
+    align-self: flex-start!important;
+}
+
+.sender-textbox.other{
+    @include textboxStyle(hsl(0%,0%,100%), #000000, 13px 13px 5px 13px, 8px 10px);
+    width:60%;
+    box-shadow: 0 1px 8px -2px hsla(271, 36%, 24%, 0.3);
+    float: right;
+    position: relative;
+    align-self: flex-end;
+}
+
+.sender-textbox.other.one{width:50%}
+
+.sender-textbox.image{
+    align-self: flex-end;
+    position: relative;
+    float: right;
+    width: 70%; 
+    background: none; 
+    box-shadow: none;  
+    @include textboxStyle(none, #000000, 0, none);
+    width:auto;
+    
+    img{
+        height:43px;
+        border-radius: 10px;
+        margin-left:4px;
+    }
+}
+
+.pricing-textbox{
+    align-self: flex-start;
+    @include textboxStyle(linear-gradient($secondPrimaryColour, $firstPrimaryColour), hsl(0%,0%,100%), 13px 13px 13px 5px,10px 8px);
+    @include displayFlex(row, center, space-between);
+    width:60%;
+
+    .options{@include displayFlex(row, center, none)}
+
+    span{
+        border-radius: 50%;
+        border:1px solid hsl(289, 100%, 72%);
+        height:12px;
+    }
+
+    input{
+        background:transparent;
+        opacity:0;
+        width:13px;
+        height:15px;
+        margin: 0;
+        border: 1px solid hsl(0%, 0%, 100%);
+    }
+
+    label{
+        color:hsl(0%, 0%, 100%);
+        font-size: 10px;
+        margin-left: 8px;
+        color:hsl(276, 100%, 88%);
+    }
+
+    p{
+        font-weight: 600;
+        font-size: 15px;
+        margin-right: 8px;
+    }
+}
+
+.chat-box{
+    width:98%;
+    display: inline-flex;
+    position: relative;
+
+    input{
+        margin-top: 7px;
+        padding: 13px 20px;
+        border-radius: 30px;
+        width:100%;
+        border: none;
+        outline: none;
+        font-size: 10px;
+
+        &::placeholder{
+            color:hsl(206, 6%, 79%);
+            font-size: 10px;
+        }
+    }
+
+    button{
+        border-radius: 60%;
+        background:hsl(271, 36%, 24%) ;
+        outline: none;
+        position: absolute;
+        height: 27px;
+        width:27px;
+        right:0;
+        top:13px;
+        right:5px;
+        border: none;
+
+        .material-icons{transform: translate(-19%,-4%);}
+    }
+}

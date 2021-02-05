@@ -1,0 +1,35 @@
+
+$firstPrimaryColour:hsl(264, 100%, 61%);
+$secondPrimaryColour:hsl(293, 100%, 63%);
+$lightGrayishViolet: hsl(270, 20%, 96%);
+
+@mixin displayFlex($direction, $alignItems, $justifyCenter) {
+    display: flex;
+    align-items: $alignItems;
+    justify-content: $justifyCenter;
+    flex-direction: $direction;
+}
+
+@mixin pseudoStyling($right, $left, $bottom, $top, $translate, $backgroundColour, $border-radius){
+    content:'';
+    height:100%;
+    width:25%;
+    position: absolute;
+    z-index: -1;
+    border-radius: $border-radius;
+    right:$right;
+    left:$left;
+    bottom:$bottom;
+    top:$top;
+    transform: $translate;
+    background: $backgroundColour;
+}
+
+@mixin textboxStyle($background, $textColor, $borderRadius, $padding){
+    background:$background;
+    padding:$padding;
+    margin-bottom: 10px;
+    border-radius: $borderRadius;
+
+    p{margin: 0; color:$textColor; font-size: 11px;}
+}
